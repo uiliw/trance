@@ -28,7 +28,7 @@ function wpdiscuz_up_after_label_html($afterLabelHtml, $comment) {
 /**
  * Understrap functions and definitions
  *
- * @package understrap
+ * @package trance
  */
 
 /**

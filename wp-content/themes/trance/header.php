@@ -4,10 +4,10 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package understrap
+ * @package trance
  */
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod( 'trance_container_type' );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -28,15 +28,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hfeed site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
+	<div class="wrapper-fluid wrapper-top-navbar" id="wrapper-top-navbar">
+		<ul>
+			<li><a href="#" title="<?php echo __( 'Portuguese','trance' ) ?>"><img src="<?php echo get_template_directory_uri()?>/img/flag-brazil.png" alt="<?php echo __( 'Portuguese','trance' ) ?>"> </a> </li>
+			<li><a href="#" title="<?php echo __( 'English','trance' ) ?>"><img src="<?php echo get_template_directory_uri()?>/img/flag-usa.png" alt="<?php echo __( 'English','trance' ) ?>"> </a> </li>
+			<li><a href="#" title="<?php echo __( 'Spanish','trance' ) ?>"><img src="<?php echo get_template_directory_uri()?>/img/flag-spain.png" alt="<?php echo __( 'Spanish','trance' ) ?>"> </a> </li>
+		</ul>
+
+	</div>
+	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
-		'understrap' ); ?></a>
+		'trance' ); ?></a>
 
 		<nav class="navbar navbar-toggleable-md  navbar-inverse bg-inverse">
 
 		<?php if ( 'container' == $container ) : ?>
-			<div class="container">
+<!--			<div class="container">-->
 		<?php endif; ?>
 
 				<button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +83,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				); ?>
 			<?php if ( 'container' == $container ) : ?>
-			</div><!-- .container -->
 			<?php endif; ?>
 
 		</nav><!-- .site-navigation -->

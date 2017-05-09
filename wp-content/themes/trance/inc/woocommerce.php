@@ -2,7 +2,7 @@
 /**
  * Add WooCommerce support
  *
- * @package understrap
+ * @package trance
  */
 add_action( 'after_setup_theme', 'woocommerce_support' );
 if ( ! function_exists( 'woocommerce_support' ) ) {
@@ -10,7 +10,7 @@ if ( ! function_exists( 'woocommerce_support' ) ) {
 	 * Declares WooCommerce theme support.
 	 */
 	function woocommerce_support() {
-		add_theme_support( 'understrap' );
+		add_theme_support( 'trance' );
 		
 		// Add New Woocommerce 3.0.0 Product Gallery support
 		add_theme_support( 'wc-product-gallery-lightbox' );
