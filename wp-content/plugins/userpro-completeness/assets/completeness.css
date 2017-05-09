@@ -1,0 +1,56 @@
+.userpro-completeness-add th, .form-table th{
+width:30%;
+}
+
+.userpro-completeness-add input, .form-table input, .form-table label{
+max-width:300px;
+}
+
+.fields_percentage{
+width:50%;
+}
+
+.fields_edit_btn{
+	background-image:url(../images/completeness-icons.png);
+	 height: 40px;
+     width: 30px;
+	background-position: 30px -5px;
+	cursor: pointer; 
+	cursor: hand;
+}
+.fields_edit_btn:hover{
+	background-image:url(../images/completeness-icons.png);
+	height:40px;
+	width: 30px;
+	background-position: 30px 40px;
+	}
+
+.fields_save_btn{
+	background-image:url(../images/completeness-icons.png);
+	 height: 40px;
+   	 width: 30px;
+   	 margin-left: -10px;
+	background-position: 0px 0px;
+	cursor: pointer; cursor: hand;
+}
+.fields_save_btn:hover{
+	height: 40px;
+   	 width: 30px;
+	background-image:url(../images/completeness-icons.png);
+	background-position: 0px 44px;
+}
+
+.fields_delete_btn{
+background-image:url(../images/completeness-icons.png);
+	 height: 40px;
+    	 width: 30px;
+	 background-position: 65px 0px;
+	 cursor: pointer; cursor: hand;
+}
+.fields_delete_btn:hover{
+	height: 40px;
+   	 width: 30px;
+	background-image:url(../images/completeness-icons.png);
+	background-position: 65px 45px;
+}
+

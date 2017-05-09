@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: userpro-es_ES\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-15 17:35+0200\n"
+"PO-Revision-Date: 2014-12-15 17:35+0200\n"
+"Last-Translator: Media Manager\n"
+"Language-Team: Wordpress\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __ngettext:1,2;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.6.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/admin.php:26 admin/admin.php:44
+msgid "Media Manager"
+msgstr ""
+
+#: admin/admin.php:92
+msgid "Settings saved."
+msgstr ""
+
+#: admin/admin.php:98
+msgid "Settings are reset to default."
+msgstr ""
+
+#: admin/admin.php:98
+msgid "Your plugin pages have been rebuilt successfully."
+msgstr ""
+
+#: admin/panels/options.php:3
+msgid "Display Settings"
+msgstr ""
+
+#: admin/panels/options.php:7
+msgid "Use lightbox to display media"
+msgstr ""
+
+#: admin/panels/options.php:10 admin/panels/options.php:26 admin/panels/options.php:44 admin/panels/options.php:69 admin/panels/options.php:94
+msgid "Yes"
+msgstr ""
+
+#: admin/panels/options.php:11 admin/panels/options.php:27 admin/panels/options.php:45 admin/panels/options.php:70 admin/panels/options.php:95
+msgid "No"
+msgstr ""
+
+#: admin/panels/options.php:17
+msgid "Number of media per page"
+msgstr ""
+
+#: admin/panels/options.php:23
+msgid "Display Media to Logged In users only"
+msgstr ""
+
+#: admin/panels/options.php:34
+msgid "Allow Media Upload Types"
+msgstr ""
+
+#: admin/panels/options.php:37
+msgid "Note"
+msgstr ""
+
+#: admin/panels/options.php:38
+msgid "If the maximum file size upload mentioned here is larger than the upload limit set by your server (PHP.ini) , then the server upload limit will be enforced. The Maximum upload limit for your server is "
+msgstr ""
+
+#: admin/panels/options.php:41 functions/field-functions.php:35 functions/field-functions.php:112
+msgid "Photos"
+msgstr ""
+
+#: admin/panels/options.php:50 admin/panels/options.php:75 admin/panels/options.php:88
+msgid "Allowed Extensions"
+msgstr ""
+
+#: admin/panels/options.php:53
+msgid "comma separated list of extensions user can upload from front end. for Ex: jpg,jpeg,png,gif"
+msgstr ""
+
+#: admin/panels/options.php:58
+msgid "Max Upload Size For Images"
+msgstr ""
+
+#: admin/panels/options.php:61
+msgid "Please Enter the Max Upload limit for Images in MB"
+msgstr ""
+
+#: admin/panels/options.php:66 functions/field-functions.php:36 functions/field-functions.php:113
+msgid "Videos"
+msgstr ""
+
+#: admin/panels/options.php:78
+msgid "comma separated list of extensions user can upload from front end. for Ex: mp4,avi,mpg,flv"
+msgstr ""
+
+#: admin/panels/options.php:83
+msgid "Max Upload Size For Videos"
+msgstr ""
+
+#: admin/panels/options.php:86
+msgid "Please Enter the Max Upload limit for Videos in MB"
+msgstr ""
+
+#: admin/panels/options.php:91 functions/field-functions.php:37 functions/field-functions.php:114
+msgid "Music"
+msgstr ""
+
+#: admin/panels/options.php:103
+msgid "comma separated list of extensions user can upload from front end. for Ex: mp3,wav"
+msgstr ""
+
+#: admin/panels/options.php:108
+msgid "Max Upload Size For Audio Files"
+msgstr ""
+
+#: admin/panels/options.php:111
+msgid "Please Enter the Max Upload limit for Audio Files in MB"
+msgstr ""
+
+#: admin/panels/options.php:118
+msgid "Save Changes"
+msgstr ""
+
+#: admin/panels/options.php:119
+msgid "Reset Options"
+msgstr ""
+
+#: functions/field-functions.php:7 functions/field-functions.php:108
+msgid "Media Gallery"
+msgstr ""
+
+#: functions/field-functions.php:48 functions/field-functions.php:141
+msgid "No Photos in the gallery"
+msgstr ""
+
+#: functions/field-functions.php:61 functions/field-functions.php:169
+msgid "No Videos in the gallery"
+msgstr ""
+
+#: functions/field-functions.php:74 functions/field-functions.php:196
+msgid "No Music files in the gallery"
+msgstr ""
+
+#: functions/field-functions.php:120 functions/field-functions.php:147 functions/field-functions.php:175 functions/media_functions.php:251 functions/media_functions.php:255 functions/media_functions.php:268 functions/media_functions.php:272 functions/media_functions.php:279 functions/media_functions.php:283 functions/media_functions.php:317 functions/media_functions.php:321 functions/media_functions.php:334 functions/media_functions.php:338 functions/media_functions.php:345 functions/media_functions.php:349 functions/media_functions.php:390 functions/media_functions.php:394 functions/media_functions.php:399 functions/media_functions.php:412 functions/media_functions.php:416 functions/media_functions.php:423 functions/media_functions.php:427
+msgid "Remove"
+msgstr ""
+
+#: functions/field-functions.php:121
+msgid "Upload New Photo"
+msgstr ""
+
+#: functions/field-functions.php:125 functions/field-functions.php:129 functions/field-functions.php:152 functions/field-functions.php:156 functions/field-functions.php:180 functions/field-functions.php:184
+msgid "Max Upload limit is %s MB"
+msgstr ""
+
+#: functions/field-functions.php:148
+msgid "Upload New Video"
+msgstr ""
+
+#: functions/field-functions.php:176
+msgid "Upload New Music"
+msgstr ""
+
+#: functions/media_functions.php:77 functions/media_functions.php:142 functions/media_functions.php:219 functions/media_functions.php:292 functions/media_functions.php:358 functions/media_functions.php:436
+msgid "Previous"
+msgstr ""
+
+#: functions/media_functions.php:78 functions/media_functions.php:143 functions/media_functions.php:220 functions/media_functions.php:293 functions/media_functions.php:359 functions/media_functions.php:437
+msgid "Next"
+msgstr ""

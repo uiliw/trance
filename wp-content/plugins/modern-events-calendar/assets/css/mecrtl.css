@@ -1,0 +1,158 @@
+/*----------------------------------
+	RTL CSS
+
+	Theme Name: Modern Events Calendar
+	Theme URI: http://webnus.biz
+	Author: WEBNUS
+	Author URI: http://codecanyon.net/user/WEBNUS
+	Description: Modern Events Calendar
+	RTL Version: 1.0.0
+	License: GNU General Public License
+	License: codecanyon.net
+
+	
+	/*-----------------------------------------------------------------------------------*/
+
+	/*	Base
+	====================================================*/
+	.mec-single-event .mec-single-event-organizer i, .mec-single-event .mec-events-meta-date i { margin-left: 10px; margin-right: 12px; }
+
+	
+	/*	margin-left 0
+	====================================================*/
+	.mec-single-event .mec-frontbox-title:before, .mec-event-schedule-content, .event-color
+	{ margin-left: 0; }
+
+
+	/*	custom-margin-left 0
+	====================================================*/
+	.mec-event-cover-classic .mec-event-icon { margin-left: 14px; }
+	.event-color { margin-right: 5px; }
+	.mec-event-list-classic .mec-event-image { margin-left: 20px }
+	.mec-event-article i { margin-left: 10px;}
+
+	/*	margin-right 0
+	====================================================*/
+	.mec-event-list-classic .mec-event-image, .mec-event-cover-classic .mec-event-icon { margin-right: 0; }
+
+
+	/*	custom-margin-right 0
+	====================================================*/
+	.mec-single-event .mec-frontbox-title:before { margin-right: 39px; }
+	.mec-event-schedule-content { margin-right: 25px; }
+
+
+	/*	padding-left 0
+	====================================================*/
+	.mec-single-event .mec-event-meta h3, .mec-single-event .mec-event-meta dt, .mec-event-schedule-content dl
+	{ padding-left: 0; }
+
+
+	/*	custom-padding-left 0
+	====================================================*/
+
+
+
+	/*	padding-right 0
+	====================================================*/
+
+
+
+	/*	custom-padding-right 0
+	====================================================*/
+	.mec-single-event .mec-event-meta h3, .mec-single-event .mec-event-meta dt { padding-right: 10px; }
+	.mec-event-schedule-content dl { padding-right: 24px; }
+
+	/*	border-left 0
+	====================================================*/
+	.mec-event-schedule-content { border: 0; }
+
+
+	/*	custom-border-left 
+	====================================================*/
+
+
+
+	/*	border-right 0
+	====================================================*/
+
+
+
+	/*	custom-border-right 
+	====================================================*/
+	.mec-event-schedule-content { border-right: 4px solid #f0f0f0; }
+
+
+	/*	custom-border-right 
+	====================================================*/
+
+
+
+	/*	left 0
+	====================================================*/
+
+
+
+	/*	left auto
+	====================================================*/
+	.mec-event-schedule-content dl:before, .mec-event-cover-modern .mec-event-cover-a
+	{ left: auto; }
+
+
+	/*	custom left 
+	====================================================*/
+
+
+
+	/*	right 0
+	====================================================*/
+	.mec-event-schedule-content dl:before, .mec-event-cover-modern .mec-event-cover-a { right: 0; }
+
+
+	/*	right auto
+	====================================================*/
+
+
+
+	/*	custom right 
+	====================================================*/
+
+
+
+	/*	float left
+	====================================================*/
+
+
+
+	/*	float right
+	====================================================*/
+	.mec-event-cover-classic .mec-event-icon, .mec-event-list-classic .mec-event-image { float: right; }
+
+	
+
+	/*	Text align right
+	====================================================*/
+	.mec-event-cover-classic .mec-btn-wrapper { text-align: right; }
+	
+
+	/*	Text align left
+	====================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+/* --------------------- 
