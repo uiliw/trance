@@ -4,11 +4,11 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package trance
+ * @package understrap
  */
 
 $the_theme = wp_get_theme();
-$container = get_theme_mod( 'trance_container_type' );
+$container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <?php get_sidebar( 'footerfull' ); ?>
@@ -32,7 +32,7 @@ $container = get_theme_mod( 'trance_container_type' );
 					
 							<?php printf( // WPCS: XSS ok.
 							/* translators:*/
-								esc_html__( 'Theme: %1$s by %2$s.', 'trance' ), $the_theme->get( 'Name' ), '<a href="http://trance.com/">trance.com</a>' ); ?>
+								esc_html__( 'Theme: %1$s by %2$s.', 'trance' ), $the_theme->get( 'Name' ), '<a href="http://understrap.com/">understrap.com</a>' ); ?>
 				
 							(<?php printf( // WPCS: XSS ok.
 							/* translators:*/

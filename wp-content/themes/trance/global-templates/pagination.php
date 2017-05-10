@@ -2,14 +2,14 @@
 /**
  * Boostrap 4 pagination
  *
- * @package trance
+ * @package understrap
  */
 
 /**
  * Generates a pagination partial template for Bootstrap 4
  * Mostly based on http://www.wpbeginner.com/wp-themes/how-to-add-numeric-pagination-in-your-wordpress-theme/
  */
-function trance_pagination() {
+function understrap_pagination() {
 	if ( is_singular() ) {
 		return;
 	}

@@ -2,7 +2,7 @@
 /**
  * Search results partial template.
  *
- * @package trance
+ * @package understrap
  */
 
 ?>
@@ -17,7 +17,7 @@
 
 			<div class="entry-meta">
 
-				<?php trance_posted_on(); ?>
+				<?php understrap_posted_on(); ?>
 
 			</div><!-- .entry-meta -->
 
@@ -33,7 +33,7 @@
 
 	<footer class="entry-footer">
 
-		<?php trance_entry_footer(); ?>
+		<?php understrap_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

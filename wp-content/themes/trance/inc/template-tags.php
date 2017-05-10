@@ -4,14 +4,14 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package trance
+ * @package understrap
  */
 
-if ( ! function_exists( 'trance_posted_on' ) ) :
+if ( ! function_exists( 'understrap_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
-function trance_posted_on() {
+function understrap_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -34,16 +34,16 @@ function trance_posted_on() {
 }
 endif;
 
-if ( ! function_exists( 'trance_entry_footer' ) ) :
+if ( ! function_exists( 'understrap_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
-function trance_entry_footer() {
+function understrap_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'trance' ) );
-		if ( $categories_list && trance_categorized_blog() ) {
+		if ( $categories_list && understrap_categorized_blog() ) {
 			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'trance' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 		/* translators: used between list items, there is a space after the comma */
@@ -74,8 +74,8 @@ endif;
  *
  * @return bool
  */
-function trance_categorized_blog() {
-	if ( false === ( $all_the_cool_cats = get_transient( 'trance_categories' ) ) ) {
+function understrap_categorized_blog() {
+	if ( false === ( $all_the_cool_cats = get_transient( 'understrap_categories' ) ) ) {
 		// Create an array of all the categories that are attached to posts.
 		$all_the_cool_cats = get_categories( array(
 			'fields'     => 'ids',
@@ -85,7 +85,7 @@ function trance_categorized_blog() {
 		) );
 		// Count the number of categories that are attached to the posts.
 		$all_the_cool_cats = count( $all_the_cool_cats );
-		set_transient( 'trance_categories', $all_the_cool_cats );
+		set_transient( 'understrap_categories', $all_the_cool_cats );
 	}
 	if ( $all_the_cool_cats > 1 ) {
 		// This blog has more than 1 category so components_categorized_blog should return true.
@@ -97,15 +97,15 @@ function trance_categorized_blog() {
 }
 
 /**
- * Flush out the transients used in trance_categorized_blog.
+ * Flush out the transients used in understrap_categorized_blog.
  */
-function trance_category_transient_flusher() {
+function understrap_category_transient_flusher() {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
 	}
 	// Like, beat it. Dig?
-	delete_transient( 'trance_categories' );
+	delete_transient( 'understrap_categories' );
 }
-add_action( 'edit_category', 'trance_category_transient_flusher' );
-add_action( 'save_post',     'trance_category_transient_flusher' );
+add_action( 'edit_category', 'understrap_category_transient_flusher' );
+add_action( 'save_post',     'understrap_category_transient_flusher' );
 

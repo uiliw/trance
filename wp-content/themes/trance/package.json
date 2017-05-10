@@ -1,5 +1,5 @@
 {
-  "name": "trance",
+  "name": "understrap",
   "version": "0.6.0",
   "description": "Wordpress Theme framework",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/holger1411/trance.git"
+    "url": "https://github.com/holger1411/understrap.git"
   },
   "keywords": [
     "wordpress",
@@ -23,9 +23,9 @@
   "author": "Holger Koenemann",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/holger1411/trance/issues"
+    "url": "https://github.com/holger1411/understrap/issues"
   },
-  "homepage": "https://trance.com",
+  "homepage": "https://understrap.com",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "browser-sync": "^2.18.8",

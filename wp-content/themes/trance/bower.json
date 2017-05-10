@@ -1,11 +1,11 @@
 {
-  "name": "trance",
+  "name": "understrap",
   "version": "0.6.0",
-  "homepage": "http://trance.com.br",
+  "homepage": "http://understrap.com",
   "authors": [
-    "Willy Werlang <willywerlang@gmail.com>"
+    "Holger Koenemann <office@holgerkoenemann.de>"
   ],
-  "description": "Trance is a Bootstrap and underscores based WordPress theme framework.",
+  "description": "UnderStrap is a Bootstrap and underscores based WordPress theme framework.",
   "moduleType": "globals",
   "main": [
     "sass/theme.scss"
@@ -25,7 +25,7 @@
   ],
   "dependencies": {
   },
-  "_source": "https://github.com/holger1411/trance.git",
+  "_source": "https://github.com/holger1411/understrap.git",
   "_target": "~0.6.0",
-  "_originalSource": "trance"
+  "_originalSource": "understrap"
 }

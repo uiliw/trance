@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.me/
  *
- * @package Trance
+ * @package UnderStrap
  */
 
 /**

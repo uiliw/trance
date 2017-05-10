@@ -2,7 +2,7 @@
 /**
  * Content empty partial template.
  *
- * @package trance
+ * @package understrap
  */
 
 the_content();

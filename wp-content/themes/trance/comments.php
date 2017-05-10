@@ -5,7 +5,7 @@
  * The area of the page that contains both current comments
  * and the comment form.
  *
- * @package trance
+ * @package understrap
  */
 
 /*
@@ -29,15 +29,15 @@ if ( post_password_required() ) {
 				if ( 1 === $comments_number ) {
 					printf(
 						/* translators: %s: post title */
-						esc_html_x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'trance' ),
+						esc_html_x( 'One thought on %s;', 'comments title', 'trance' ),
 						'<span>' . get_the_title() . '</span>'
 					);
 				} else {
 					printf( // WPCS: XSS OK.
 						/* translators: 1: number of comments, 2: post title */
 						esc_html( _nx(
-							'%1$s thought on &ldquo;%2$s&rdquo;',
-							'%1$s thoughts on &ldquo;%2$s&rdquo;',
+							'%1$s thought on %2$s',
+							'%1$s thoughts on %2$',
 							$comments_number,
 							'comments title',
 							'trance'
