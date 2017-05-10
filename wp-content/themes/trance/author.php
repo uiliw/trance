@@ -31,7 +31,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 						$author_name ) : get_userdata( intval( $author ) );
 					?>
 
-					<h1><?php esc_html_e( 'About:', 'understrap' ); ?><?php echo esc_html( $curauth->nickname ); ?></h1>
+					<h1><?php esc_html_e( 'About:', 'trance' ); ?><?php echo esc_html( $curauth->nickname ); ?></h1>
 
 					<?php if ( ! empty( $curauth->ID ) ) : ?>
 						<?php echo get_avatar( $curauth->ID ); ?>
@@ -39,19 +39,19 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 					<dl>
 						<?php if ( ! empty( $curauth->user_url ) ) : ?>
-							<dt><?php esc_html_e( 'Website', 'understrap' ); ?></dt>
+							<dt><?php esc_html_e( 'Website', 'trance' ); ?></dt>
 							<dd>
 								<a href="<?php echo esc_html( $curauth->user_url ); ?>"><?php echo esc_html( $curauth->user_url ); ?></a>
 							</dd>
 						<?php endif; ?>
 
 						<?php if ( ! empty( $curauth->user_description ) ) : ?>
-							<dt><?php esc_html_e( 'Profile', 'understrap' ); ?></dt>
+							<dt><?php esc_html_e( 'Profile', 'trance' ); ?></dt>
 							<dd><?php echo esc_html( $curauth->user_description ); ?></dd>
 						<?php endif; ?>
 					</dl>
 
-					<h2><?php esc_html_e( 'Posts by', 'understrap' ); ?> <?php echo esc_html( $curauth->nickname ); ?>
+					<h2><?php esc_html_e( 'Posts by', 'trance' ); ?> <?php echo esc_html( $curauth->nickname ); ?>
 						:</h2>
 
 				</header><!-- .page-header -->
@@ -66,7 +66,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 								   title="Permanent Link: <?php the_title(); ?>">
 									<?php the_title(); ?></a>,
 								<?php understrap_posted_on(); ?> <?php esc_html_e( 'in',
-								'understrap' ); ?> <?php the_category( '&' ); ?>
+								'trance' ); ?> <?php the_category( '&' ); ?>
 							</li>
 						<?php endwhile; ?>
 

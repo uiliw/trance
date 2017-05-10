@@ -28,7 +28,7 @@ if ( $rating && get_option( 'woocommerce_enable_review_rating' ) === 'yes' ) { ?
 	<div class="star-rating">
 		<span style="width:<?php echo ( esc_attr( $rating ) / 5 ) * 100; ?>%"><?php
 			/* translators: %s: rating */
-			printf( esc_html__( '%s out of 5', 'understrap' ), '<strong>' . $rating . '</strong>' );
+			printf( esc_html__( '%s out of 5', 'trance' ), '<strong>' . $rating . '</strong>' );
 		?></span>
 	</div>
 

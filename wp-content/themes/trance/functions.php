@@ -1,30 +1,4 @@
 <?php
-
-////////////////////////////////////////////////////////////////////////
-// User Pro Profile URL Integration ////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
-add_filter('wpdiscuz_profile_url', 'wpdiscuz_up_profile_url', 10, 2);
-function wpdiscuz_up_profile_url($profile_url, $user) {
-    if ($user && class_exists('userpro_api')) {
-        global $userpro; $profile_url = $userpro->permalink($user->ID);
-    }
-    return $profile_url;
-}
-
-////////////////////////////////////////////////////////////////////////
-// User Pro Badges Integration ////////////////////////////
-////////////////////////////////////////////////////////////////////////
-add_filter('wpdiscuz_after_label', 'wpdiscuz_up_after_label_html', 110, 2);
-function wpdiscuz_up_after_label_html($afterLabelHtml, $comment) {
-    if ($comment->user_id && class_exists('userpro_api')) {
-        $afterLabelHtml .= userpro_show_badges($comment->user_id, $inline = true);
-    }
-    return $afterLabelHtml;
-}
-
-
-
-
 /**
  * Understrap functions and definitions
  *

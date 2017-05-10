@@ -23,7 +23,7 @@ function slbd_count_widgets( $sidebar_id ) {
 		$widget_count = count( $sidebars_widgets_count[ $sidebar_id ] );
 		$widget_classes = 'widget-count-' . count( $sidebars_widgets_count[ $sidebar_id ] );
 		if ( $widget_count % 4 == 0 || $widget_count > 6 ) :
-			// Four widgets per row if there are exactly four or more than six
+			// Four widgets er row if there are exactly four or more than six
 			$widget_classes .= ' col-md-3';
 		elseif ( 6 == $widget_count ) :
 			// If two widgets are published
@@ -35,7 +35,7 @@ function slbd_count_widgets( $sidebar_id ) {
 			// If two widgets are published
 			$widget_classes .= ' col-md-6';
 		elseif ( 1 == $widget_count ) :
-			// If just one widget is active
+			// If just on widget is active
 			$widget_classes .= ' col-md-12';
 		endif; 
 		return $widget_classes;
@@ -49,7 +49,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 	 */
 	function understrap_widgets_init() {
 		register_sidebar( array(
-			'name'          => __( 'Right Sidebar', 'understrap' ),
+			'name'          => __( 'Right Sidebar', 'trance' ),
 			'id'            => 'right-sidebar',
 			'description'   => 'Right sidebar widget area',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -59,7 +59,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		) );
 
 		register_sidebar( array(
-			'name'          => __( 'Left Sidebar', 'understrap' ),
+			'name'          => __( 'Left Sidebar', 'trance' ),
 			'id'            => 'left-sidebar',
 			'description'   => 'Left sidebar widget area',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -69,7 +69,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		) );
 
 		register_sidebar( array(
-			'name'          => __( 'Hero Slider', 'understrap' ),
+			'name'          => __( 'Hero Slider', 'trance' ),
 			'id'            => 'hero',
 			'description'   => 'Hero slider area. Place two or more widgets here and they will slide!',
 			'before_widget' => '<div class="carousel-item">',
@@ -79,7 +79,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		) );
 
 		register_sidebar( array(
-			'name'          => __( 'Hero Static', 'understrap' ),
+			'name'          => __( 'Hero Static', 'trance' ),
 			'id'            => 'statichero',
 			'description'   => 'Static Hero widget. no slider functionallity',
 		    'before_widget'  => '<div id="%1$s" class="static-hero-widget %2$s '. slbd_count_widgets( 'statichero' ) .'">', 
@@ -89,7 +89,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		) );
 
 		register_sidebar( array(
-			'name'          => __( 'Footer Full', 'understrap' ),
+			'name'          => __( 'Footer Full', 'trance' ),
 			'id'            => 'footerfull',
 			'description'   => 'Widget area below main content and above footer',
 		    'before_widget'  => '<div id="%1$s" class="footer-widget %2$s '. slbd_count_widgets( 'footerfull' ) .'">', 
