@@ -4,12 +4,12 @@
  *
  * Learn more: https://codex.wordpress.org/Author_Templates
  *
- * @package trance
+ * @package understrap
  */
 
 get_header();
-$container   = get_theme_mod( 'trance_container_type' );
-$sidebar_pos = get_theme_mod( 'trance_sidebar_position' );
+$container   = get_theme_mod( 'understrap_container_type' );
+$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 ?>
 
 
@@ -65,7 +65,7 @@ $sidebar_pos = get_theme_mod( 'trance_sidebar_position' );
 								<a rel="bookmark" href="<?php the_permalink() ?>"
 								   title="Permanent Link: <?php the_title(); ?>">
 									<?php the_title(); ?></a>,
-								<?php trance_posted_on(); ?> <?php esc_html_e( 'in',
+								<?php understrap_posted_on(); ?> <?php esc_html_e( 'in',
 								'trance' ); ?> <?php the_category( '&' ); ?>
 							</li>
 						<?php endwhile; ?>
@@ -83,7 +83,7 @@ $sidebar_pos = get_theme_mod( 'trance_sidebar_position' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php trance_pagination(); ?>
+			<?php understrap_pagination(); ?>
 
 		</div><!-- #primary -->
 

@@ -2,15 +2,15 @@
 /**
  * Custom header setup.
  *
- * @package trance
+ * @package understrap
  */
 
-function trance_custom_header_setup() {
+function understrap_custom_header_setup() {
 
 	/**
-	 * Filter Trance custom-header support arguments.
+	 * Filter UnderStrap custom-header support arguments.
 	 *
-	 * @since Trance 0.5.2
+	 * @since UnderStrap 0.5.2
 	 *
 	 * @param array $args {
 	 *     An array of custom-header support arguments.
@@ -24,7 +24,7 @@ function trance_custom_header_setup() {
 	 *     @type string $flex-height     		Flex support for height of header.
 	 * }
 	 */
-	add_theme_support( 'custom-header', apply_filters( 'trance_custom_header_args', array(
+	add_theme_support( 'custom-header', apply_filters( 'understrap_custom_header_args', array(
 		'default-image'      => get_parent_theme_file_uri( '/img/header.jpg' ),
 		'width'              => 2000,
 		'height'             => 1200,
@@ -39,4 +39,4 @@ function trance_custom_header_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'trance_custom_header_setup' );
+add_action( 'after_setup_theme', 'understrap_custom_header_setup' );

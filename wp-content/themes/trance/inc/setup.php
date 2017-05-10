@@ -2,7 +2,7 @@
 /**
  * Theme basic setup.
  *
- * @package trance
+ * @package understrap
  */
 
 require get_template_directory() . '/inc/theme-settings.php';
@@ -12,7 +12,7 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
-if ( ! function_exists( 'trance_setup' ) ) :
+if ( ! function_exists( 'understrap_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -20,11 +20,11 @@ if ( ! function_exists( 'trance_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function trance_setup() {
+	function understrap_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on trance, use a find and replace
+		 * If you're building a theme based on understrap, use a find and replace
 		 * to change 'trance' to the name of your theme in all the template files
 		 */
 		load_theme_textdomain( 'trance', get_template_directory() . '/languages' );
@@ -80,7 +80,7 @@ if ( ! function_exists( 'trance_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'trance_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'understrap_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -91,8 +91,8 @@ if ( ! function_exists( 'trance_setup' ) ) :
 		// Check and setup theme default settings.
 		setup_theme_default_settings();
 	}
-endif; // trance_setup.
-add_action( 'after_setup_theme', 'trance_setup' );
+endif; // understrap_setup.
+add_action( 'after_setup_theme', 'understrap_setup' );
 
 if ( ! function_exists( 'custom_excerpt_more' ) ) {
 	/**
@@ -118,7 +118,7 @@ if ( ! function_exists( 'all_excerpts_get_more_link' ) ) {
 	 */
 	function all_excerpts_get_more_link( $post_excerpt ) {
 
-		return $post_excerpt . ' [...]<p><a class="btn btn-secondary trance-read-more-link" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More...',
+		return $post_excerpt . ' [...]<p><a class="btn btn-secondary understrap-read-more-link" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More...',
 		'trance' ) . '</a></p>';
 	}
 }

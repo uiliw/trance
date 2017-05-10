@@ -2,7 +2,7 @@
 /**
  * Post rendering content according to caller of get_template_part.
  *
- * @package trance
+ * @package understrap
  */
 
 ?>
@@ -17,7 +17,7 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 
 			<div class="entry-meta">
-				<?php trance_posted_on(); ?>
+				<?php understrap_posted_on(); ?>
 			</div><!-- .entry-meta -->
 
 		<?php endif; ?>
@@ -43,7 +43,7 @@
 
 	<footer class="entry-footer">
 
-		<?php trance_entry_footer(); ?>
+		<?php understrap_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

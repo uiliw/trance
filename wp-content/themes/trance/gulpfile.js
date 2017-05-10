@@ -14,7 +14,6 @@ var browserSyncWatchFiles = [
     './**/*.php'
 ];
 
-
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {

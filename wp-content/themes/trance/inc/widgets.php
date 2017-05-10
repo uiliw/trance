@@ -2,7 +2,7 @@
 /**
  * Declaring widgets
  *
- * @package trance
+ * @package understrap
  */
 
 /**
@@ -23,7 +23,7 @@ function slbd_count_widgets( $sidebar_id ) {
 		$widget_count = count( $sidebars_widgets_count[ $sidebar_id ] );
 		$widget_classes = 'widget-count-' . count( $sidebars_widgets_count[ $sidebar_id ] );
 		if ( $widget_count % 4 == 0 || $widget_count > 6 ) :
-			// Four widgets per row if there are exactly four or more than six
+			// Four widgets er row if there are exactly four or more than six
 			$widget_classes .= ' col-md-3';
 		elseif ( 6 == $widget_count ) :
 			// If two widgets are published
@@ -35,7 +35,7 @@ function slbd_count_widgets( $sidebar_id ) {
 			// If two widgets are published
 			$widget_classes .= ' col-md-6';
 		elseif ( 1 == $widget_count ) :
-			// If just one widget is active
+			// If just on widget is active
 			$widget_classes .= ' col-md-12';
 		endif; 
 		return $widget_classes;
@@ -43,11 +43,11 @@ function slbd_count_widgets( $sidebar_id ) {
 }
 
 
-if ( ! function_exists( 'trance_widgets_init' ) ) {
+if ( ! function_exists( 'understrap_widgets_init' ) ) {
 	/**
 	 * Initializes themes widgets.
 	 */
-	function trance_widgets_init() {
+	function understrap_widgets_init() {
 		register_sidebar( array(
 			'name'          => __( 'Right Sidebar', 'trance' ),
 			'id'            => 'right-sidebar',
@@ -99,6 +99,6 @@ if ( ! function_exists( 'trance_widgets_init' ) ) {
 		) );
 
 	}
-} // endif function_exists( 'trance_widgets_init' ).
-add_action( 'widgets_init', 'trance_widgets_init' );
+} // endif function_exists( 'understrap_widgets_init' ).
+add_action( 'widgets_init', 'understrap_widgets_init' );
 

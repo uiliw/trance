@@ -2,7 +2,7 @@
 /**
  * Sidebar - hero setup.
  *
- * @package trance
+ * @package understrap
  */
 
 ?>

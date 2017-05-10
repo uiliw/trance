@@ -2,7 +2,7 @@
 /**
  * Comment layout.
  *
- * @package trance
+ * @package understrap
  */
 
 // Comments form.

@@ -2,13 +2,13 @@
 /**
  * The template for displaying search results pages.
  *
- * @package trance
+ * @package understrap
  */
 
 get_header();
 
-$container   = get_theme_mod( 'trance_container_type' );
-$sidebar_pos = get_theme_mod( 'trance_sidebar_position' );
+$container   = get_theme_mod( 'understrap_container_type' );
+$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 ?>
 
 <div class="wrapper" id="search-wrapper">
@@ -54,7 +54,7 @@ $sidebar_pos = get_theme_mod( 'trance_sidebar_position' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php trance_pagination(); ?>
+			<?php understrap_pagination(); ?>
 
 		</div><!-- #primary -->
 

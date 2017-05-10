@@ -7,13 +7,13 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package trance
+ * @package understrap
  */
 
 get_header();
 
-$container   = get_theme_mod( 'trance_container_type' );
-$sidebar_pos = get_theme_mod( 'trance_sidebar_position' );
+$container   = get_theme_mod( 'understrap_container_type' );
+$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 ?>
 
