@@ -35,7 +35,7 @@ var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var merge2 = require('merge2');
-var imagemin = require('gulp-imagemin');
+var tinypng = require('gulp-tinypng-extended');
 var ignore = require('gulp-ignore');
 var rimraf = require('gulp-rimraf');
 var clone = require('gulp-clone');
@@ -109,16 +109,19 @@ gulp.task('watch', function () {
     gulp.watch([basePaths.dev + 'js/**/*.js','js/**/*.js','!js/theme.js','!js/theme.min.js'], ['scripts']);
 
     //Inside the watch task.
-    gulp.watch('./img/**', ['imagemin'])
+    gulp.watch('./images/**', ['tinypng'])
 });
 
-// Run:
-// gulp imagemin
-// Running image optimizing task
-gulp.task('imagemin', function(){
-    gulp.src('img/**')
-    .pipe(imagemin())
-    .pipe(gulp.dest('img'))
+
+gulp.task('tinypng', function () {
+    gulp.src('images/**/*.{png,jpg,jpeg}')
+        .pipe(plumber())
+        .pipe(tinypng({
+            key: '80gMNxgLu0G996I18yRh6BMeNz2ReE4q',
+            sigFile: 'images/.tinypng-sigs',
+            log: true
+        }))
+        .pipe(gulp.dest('img'));
 });
 
 
@@ -176,7 +179,9 @@ gulp.task('scripts', function() {
 
         // End - All BS4 stuff
 
-        basePaths.dev + 'js/skip-link-focus-fix.js'
+        basePaths.dev + 'js/skip-link-focus-fix.js',
+        'js/custom.js',
+        'js/retina.js'
     ];
   gulp.src(scripts)
     .pipe(concat('theme.min.js'))
