@@ -179,6 +179,8 @@ gulp.task('scripts', function() {
 
         // End - All BS4 stuff
 
+        basePaths.dev + 'js/particles.js',
+
         basePaths.dev + 'js/skip-link-focus-fix.js',
         'js/custom.js',
         'js/retina.js'
@@ -227,6 +229,10 @@ gulp.task('copy-assets', ['clean-source'], function() {
 
 // Copy jQuery
     gulp.src(basePaths.node + 'jquery/dist/*.js')
+        .pipe(gulp.dest(basePaths.dev + '/js'));
+
+// Copy Particles.Js
+    gulp.src(basePaths.node + 'particles.js/*.js')
         .pipe(gulp.dest(basePaths.dev + '/js'));
 
 // _s SCSS files

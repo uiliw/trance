@@ -22,3 +22,13 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 } // endif function_exists( 'understrap_scripts' ).
 
 add_action( 'wp_enqueue_scripts', 'understrap_scripts' );
+
+
+
+function remove_plugins_styles_footer() {
+
+    wp_deregister_style('dashboard-style');
+
+}
+
+add_action('wp_footer', 'remove_plugins_styles_footer');

@@ -48,7 +48,8 @@
     "merge2": "^1.0.3",
     "run-sequence": "^1.2.2",
     "gulp-clean-css": "^3.0.4",
-    "undescores-for-npm": "^1.0.0"
+    "undescores-for-npm": "^1.0.0",
+    "particles.js":"2.0.0"
   },
   "devDependencies": {
   }

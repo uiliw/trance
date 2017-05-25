@@ -12,8 +12,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div id="home-wrapper">
-	<?php putRevSlider( 'home' ); ?>
 
+    <?php putRevSlider( 'home' ); ?>
+    <section class="row">
+        <div class="col-md-9">
+        </div>
+        <div class="col-md-3">
+        </div>
+    </section>
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content">
 
